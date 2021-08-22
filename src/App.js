@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       {/* <Navigation /> */}
       <h2>리그오브 레전드 sample 홈페이지 만들기</h2>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navigation />
         {/* <Route path="/" component={Home} /> */}
         <Route path="/" exact component={Home} />
